@@ -1,0 +1,19 @@
+{
+  "name": "pizza-dev",
+  "version": "1.0.0",
+  "description": "Full-stack Pizza delivery platform with Customer App, Admin Dashboard, and Express Backend",
+  "private": true,
+  "scripts": {
+    "build:backend": "npm --prefix backend install",
+    "build:frontend": "npm --prefix frontend install && npm --prefix frontend run build",
+    "build:admin": "npm --prefix admin install && npm --prefix admin run build",
+    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build && npm --prefix admin install && npm --prefix admin run build",
+    "start": "node backend/server.js",
+    "dev:backend": "npm --prefix backend run server",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:admin": "npm --prefix admin run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

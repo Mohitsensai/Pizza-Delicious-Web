@@ -1,0 +1,144 @@
+{
+  "foods": [
+    {
+      "_id": "67b001a1e000000000000001",
+      "name": "Veg Pizza",
+      "description": "Veg pizza is a delightful combination of fresh vegetables layered over a crispy crust.",
+      "price": 149,
+      "category": "Veg-Pizza",
+      "image": "food1_veg-pizza.png"
+    },
+    {
+      "_id": "67b001a1e000000000000002",
+      "name": "Non Veg",
+      "description": "The base starts with freshly kneaded dough, hand-stretched and baked to a golden crust.",
+      "price": 270,
+      "category": "Non-Veg Pizza",
+      "image": "food2_nonveg.png"
+    },
+    {
+      "_id": "67b001a1e000000000000003",
+      "name": "Margherita",
+      "description": "A thin layer of vibrant tomato sauce is spread evenly on the crust.",
+      "price": 169,
+      "category": "Volcano Pizza",
+      "image": "food3_marg.png"
+    },
+    {
+      "_id": "67b001a1e000000000000004",
+      "name": "Farmhouse",
+      "description": "Generous amounts of mozzarella cheese melt into a creamy, golden layer.",
+      "price": 170,
+      "category": "Volcano Pizza",
+      "image": "food4_farmhouse.png"
+    },
+    {
+      "_id": "67b001a1e000000000000005",
+      "name": "Peppy Paneer",
+      "description": "Peppy Paneer Pizza is a fusion favorite, blending Indian flavors with the classic Italian pizza.",
+      "price": 185,
+      "category": "Combo Feast",
+      "image": "food5_peppypaneer.png"
+    },
+    {
+      "_id": "67b001a1e000000000000006",
+      "name": "Pizza Mania",
+      "description": "Smooth, melted mozzarella cheese covers the entire surface, adding creaminess.",
+      "price": 220,
+      "category": "Combo Feast",
+      "image": "food6_pizzamania.png"
+    }
+  ],
+  "users": [
+    {
+      "name": "Test User",
+      "email": "test_1793187450645@example.com",
+      "password": "$2b$10$xSYdTU58SfkHNQLiTQtrQOzM7VIwzv0AegygjhJfbrwjWEMLga45y",
+      "cartData": {},
+      "_id": "79a45c24fb105a04890888cc"
+    },
+    {
+      "name": "dfwe",
+      "email": "mk4199723@gmail.com",
+      "password": "$2b$10$1jmoqLK9HPXMwsuvm8ikw.T71vtd50bQ2ATVQtA6PbSET3uyf4NEq",
+      "cartData": {},
+      "_id": "403eba64c6284bee2af2d0c8"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "79a45c24fb105a04890888cc",
+      "items": [
+        {
+          "name": "Veg Pizza",
+          "price": 149,
+          "quantity": 2
+        },
+        {
+          "name": "Custom Pizza",
+          "price": 210,
+          "quantity": 1
+        }
+      ],
+      "amount": 548,
+      "address": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "test_1793187450645@example.com",
+        "street": "123 Main St",
+        "city": "City",
+        "state": "State",
+        "zipcode": "12345",
+        "country": "India",
+        "phone": "9876543210"
+      },
+      "status": "Food Processing",
+      "date": "2026-10-28T11:37:30.910Z",
+      "payment": false,
+      "_id": "d592e6dbd9459dd801701d78"
+    },
+    {
+      "userId": "403eba64c6284bee2af2d0c8",
+      "items": [
+        {
+          "name": "Veg Pizza",
+          "price": 149,
+          "quantity": 3
+        }
+      ],
+      "amount": 487,
+      "address": {
+        "firstName": "MOHIT",
+        "lastName": "KUMAR",
+        "email": "mk4199723@gmail.com",
+        "street": "baro kanthalyia , barrackpore , kolkata , Westbengal",
+        "city": "barrackpore",
+        "state": "Select...",
+        "zipcode": "700120",
+        "country": "India",
+        "phone": "08797194622"
+      },
+      "status": "Food Processing",
+      "date": "2026-10-28T11:46:31.228Z",
+      "payment": false,
+      "_id": "06f8b7957868dbbd90577b00"
+    }
+  ],
+  "inventory": {
+    "_id": "67b001a1e000000000000099",
+    "base": 94,
+    "sauce": 89,
+    "cheese": 91,
+    "veggies": {
+      "onion": 100,
+      "tomato": 100,
+      "capsicum": 100,
+      "olives": 100
+    },
+    "meat": {
+      "chicken": 100,
+      "pepperoni": 100
+    },
+    "lastUpdated": "2026-10-28T11:46:31.261Z"
+  }
+}

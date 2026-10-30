@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+powershell.exe
+powershell.bat
+powershell.cmd
+*.log
+.vscode/
+*.zip
+.DS_Store

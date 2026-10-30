@@ -1,0 +1,126 @@
+/* ─── Header Container ───────────────────────── */
+.header {
+    height: 30vw;
+    max-height: 420px;
+    width: 100%;
+    margin: 10px auto;
+    background: url('/pizza1.png') no-repeat center/cover;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* ❌ Remove always-dark overlay */
+/* Instead make it hidden initially */
+.header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;                 /* 👈 hidden by default */
+    transition: 0.4s ease;
+}
+
+/* ✅ Dark only on hover */
+.header:hover::after {
+    opacity: 1;
+}
+
+/* ─── Content ───────────────────────── */
+.header-contents {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2vw;
+    max-width: 50%;
+    bottom: 12%;
+    left: 6vw;
+    animation: fadeInUp 1.2s ease;
+}
+
+/* Title */
+.header-contents h2 {
+    margin: 0;
+    font-weight: 700;
+    color: #000;   /* 👈 normal black text */
+    font-size: clamp(28px, 4.5vw, 60px);
+    transition: 0.3s;
+}
+
+/* Description */
+.header-contents p {
+    font-weight: 400;
+    color: #333;
+    font-size: clamp(14px, 1.1vw, 18px);
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+/* 🔥 Text becomes white on hover */
+.header:hover h2,
+.header:hover p {
+    color: #fff;
+}
+
+/* ─── Button ───────────────────────── */
+.header-contents button {
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #ff512f, #ffea00);
+    font-size: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.header-contents button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px rgba(226, 219, 216, 0.6);
+}
+
+/* Click */
+.header-contents button:active {
+    transform: scale(0.95);
+}
+
+/* ─── Animation ───────────────────────── */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ─── Responsive ───────────────────────── */
+@media (max-width:1050px) {
+    .header-contents {
+        max-width: 60%;
+    }
+}
+
+@media (max-width:750px) {
+    .header {
+        height: 55vw;
+    }
+
+    .header-contents {
+        max-width: 80%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button {
+        padding: 10px 20px;
+    }
+}

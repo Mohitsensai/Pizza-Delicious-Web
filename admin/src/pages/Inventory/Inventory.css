@@ -1,0 +1,19 @@
+/* Inventory.css */
+.inventory {
+    padding: 20px;
+}
+
+.inventory input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+.inventory-update-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

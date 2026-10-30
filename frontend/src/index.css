@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-shadow: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+}
+hr{
+  border: none;
+  height: 0.8px;
+  background-color: #450b8c;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.app{
+  width: 90%;
+  margin: auto;
+}
+@keyframes fadeIn {
+  0%{
+    fill-opacity: 0;
+  }
+  100%{
+    fill-opacity: 1;
+  }
+}
